@@ -1,0 +1,21 @@
+{application, chat_app, [
+    {description, "An OTP application"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {chat_app_app, []}},
+    {applications, [
+    kernel,
+    stdlib,
+    cowboy,
+    cowlib,
+    ranch
+]},
+    {env, []},
+    {modules, [
+        chat_app_app, 
+        chat_app_sup,
+        chat_app_handler 
+    ]},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+ ]}.
